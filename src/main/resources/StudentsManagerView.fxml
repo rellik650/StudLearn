@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXTreeTableView fx:id="treeTable" layoutX="-1.0" layoutY="-7.0" prefHeight="591.0" prefWidth="800.0" stylesheets="@treeTable.css" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+      <JFXButton fx:id="dowloadButton" buttonType="RAISED" layoutX="653.0" layoutY="601.0" ripplerFill="WHITE" style="-fx-background-color: #8BC34A;" text="Download submission" />
+      <JFXButton fx:id="gradeButton" buttonType="RAISED" layoutX="555.0" layoutY="601.0" ripplerFill="WHITE" style="-fx-background-color: #8BC34A;" text="Grade student" />
+      <JFXTextField fx:id="filterTextField" focusColor="#8bc34a" layoutX="20.0" layoutY="598.0" promptText="Search filter" />
+   </children>
+</AnchorPane>

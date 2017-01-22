@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="sideMenu" alignment="BOTTOM_CENTER" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="200.0" scaleShape="false" snapToPixel="false" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ImageView fitHeight="128.0" fitWidth="200.0" pickOnBounds="true">
+            <image>
+                <Image url="@images/sideMenuImage.png" />
+            </image>
+        </ImageView>
+        <JFXButton fx:id="studentDetailsButton" accessibleText="details" buttonType="RAISED" prefHeight="128.0" prefWidth="200.0" ripplerFill="WHITE" style="-fx-background-color: #8bc34a;" text="Account details" />
+        <JFXButton fx:id="coursesButton" accessibleText="courses" buttonType="RAISED" prefHeight="128.0" prefWidth="200.0" ripplerFill="WHITE" style="-fx-background-color: #8bc34a;" text="Manage Courses" />
+      <JFXButton accessibleText="students" buttonType="RAISED" prefHeight="128.0" prefWidth="206.0" ripplerFill="WHITE" style="-fx-background-color: #8bc34a;" text="Manage Students" />
+        <JFXButton fx:id="logOutButton" accessibleText="out" buttonType="RAISED" prefHeight="128.0" prefWidth="200.0" ripplerFill="WHITE" style="-fx-background-color: #8bc34a;" text="Log Out" />
+    </children>
+</VBox>

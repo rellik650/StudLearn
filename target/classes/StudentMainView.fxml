@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="childPane" prefHeight="640.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="372.0" fitWidth="372.0" layoutX="214.0" layoutY="149.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="119.0" AnchorPane.leftAnchor="214.0" AnchorPane.rightAnchor="214.0" AnchorPane.topAnchor="149.0">
+               <image>
+                  <Image url="@images/welcomeLogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <JFXDrawer fx:id="menuDrawer" defaultDrawerSize="190.0" layoutX="-6.0" layoutY="-9.0" prefHeight="640.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <JFXHamburger fx:id="hamburger" layoutX="726.0" layoutY="37.0" />
+   </children>
+</AnchorPane>

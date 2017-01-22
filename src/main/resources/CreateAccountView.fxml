@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXDialog?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="800.0" style="-fx-background-color: #EEEEEE;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CreateAccountController">
+   <children>
+      <Pane layoutX="21.0" layoutY="30.0" prefHeight="497.0" prefWidth="651.0" style="-fx-background-color: WHITE; -fx-background-radius: 30;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="30.0">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" />
+         </effect>
+         <children>
+            <Pane fx:id="teacherRegistrationPane" layoutX="88.0" layoutY="300.0" prefHeight="200.0" prefWidth="516.0" style="-fx-background-color: white;">
+               <children>
+                  <JFXTextField fx:id="teacherFirstNameTextField" focusColor="#8bc34a" labelFloat="true" layoutX="14.0" layoutY="26.0" maxWidth="231.0" minWidth="219.0" prefHeight="31.0" prefWidth="231.0" promptText="First name" />
+                  <JFXTextField fx:id="teacherLastNameTextField" focusColor="#8bc34a" labelFloat="true" layoutX="250.0" layoutY="26.0" maxWidth="245.0" minWidth="231.0" prefHeight="31.0" prefWidth="245.0" promptText="Last name" />
+                  <JFXTextField fx:id="qualificationTextField" focusColor="#8bc34a" labelFloat="true" layoutX="14.0" layoutY="69.0" maxWidth="481.0" minWidth="160.0" prefHeight="31.0" prefWidth="481.0" promptText="Qualification" />
+                  <JFXButton fx:id="teacherSubmitButton" buttonType="RAISED" layoutX="392.0" layoutY="152.0" prefHeight="31.0" prefWidth="103.0" ripplerFill="WHITE" style="-fx-background-color: #8BC34A;" text="Submit" />
+                  <JFXButton fx:id="teacherCancelButton" buttonType="RAISED" layoutX="285.0" layoutY="152.0" prefHeight="31.0" prefWidth="94.0" ripplerFill="WHITE" style="-fx-background-color: #8BC34A;" text="Cancel" />
+               </children>
+            </Pane>
+            <Pane fx:id="studentRegistrationPane" layoutX="78.0" layoutY="290.0" prefHeight="200.0" prefWidth="516.0" style="-fx-background-color: white;">
+               <children>
+                  <JFXTextField fx:id="studentFirstNameTextField" focusColor="#8bc34a" labelFloat="true" layoutX="14.0" layoutY="26.0" maxWidth="231.0" minWidth="219.0" prefHeight="31.0" prefWidth="231.0" promptText="First name" />
+                  <JFXTextField fx:id="studentLastNameTextField" focusColor="#8bc34a" labelFloat="true" layoutX="250.0" layoutY="26.0" maxWidth="245.0" minWidth="231.0" prefHeight="31.0" prefWidth="245.0" promptText="Last name" />
+                  <JFXTextField fx:id="streetNameTextField" focusColor="#8bc34a" labelFloat="true" layoutX="14.0" layoutY="69.0" maxWidth="231.0" minWidth="160.0" prefHeight="31.0" prefWidth="160.0" promptText="Street" />
+                  <JFXTextField fx:id="streetNumberTextField" focusColor="#8bc34a" labelFloat="true" layoutX="171.0" layoutY="69.0" maxWidth="78.0" minWidth="60.0" prefHeight="31.0" prefWidth="78.0" promptText="Number" />
+                  <JFXButton fx:id="studentSubmitButton" buttonType="RAISED" layoutX="392.0" layoutY="152.0" prefHeight="31.0" prefWidth="103.0" ripplerFill="WHITE" style="-fx-background-color: #8BC34A;" text="Submit" />
+                  <JFXButton fx:id="studentCancelButton" buttonType="RAISED" layoutX="285.0" layoutY="152.0" prefHeight="31.0" prefWidth="94.0" ripplerFill="WHITE" style="-fx-background-color: #8BC34A;" text="Cancel" />
+                  <JFXTextField fx:id="cityTextField" focusColor="#8bc34a" labelFloat="true" layoutX="14.0" layoutY="111.0" maxWidth="148.0" minWidth="94.0" prefHeight="31.0" prefWidth="117.0" promptText="City" />
+                  <JFXTextField fx:id="stateTextField" focusColor="#8bc34a" labelFloat="true" layoutX="131.0" layoutY="111.0" maxWidth="148.0" minWidth="94.0" prefHeight="31.0" prefWidth="117.0" promptText="State" />
+                  <JFXDatePicker fx:id="datePicker" defaultColor="#8bc34a" layoutX="250.0" layoutY="69.0" prefHeight="31.0" prefWidth="245.0" promptText="Birthdate" />
+               </children>
+            </Pane>
+            <JFXTextField fx:id="usernameTextField" focusColor="#8bc34a" labelFloat="true" layoutX="117.0" layoutY="113.0" maxWidth="449.0" minWidth="449.0" prefHeight="31.0" prefWidth="449.0" promptText="Username" />
+            <ImageView fitHeight="51.0" fitWidth="51.0" layoutX="77.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/usernameIcon.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="emailTextField" focusColor="#8bc34a" labelFloat="true" layoutX="117.0" layoutY="161.0" maxWidth="449.0" minWidth="449.0" prefHeight="31.0" prefWidth="449.0" promptText="Email" />
+            <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="85.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/emailIcon.png" />
+               </image>
+            </ImageView>
+            <JFXPasswordField fx:id="passwordField" focusColor="#8bc34a" labelFloat="true" layoutX="117.0" layoutY="205.0" maxWidth="219.0" minWidth="204.0" prefHeight="31.0" prefWidth="219.0" promptText="Password" />
+            <JFXPasswordField fx:id="confirmPasswordField" focusColor="#8bc34a" labelFloat="true" layoutX="335.0" layoutY="205.0" maxWidth="231.0" minWidth="204.0" prefHeight="31.0" prefWidth="231.0" promptText="Confirm password" />
+            <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="88.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/passwordIcon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="88.0" layoutY="36.0" prefHeight="87.0" prefWidth="260.0" text="Registration form">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <JFXRadioButton fx:id="studentRadioButton" layoutX="79.0" layoutY="261.0" text="Register as a student" />
+            <JFXRadioButton fx:id="teacherRadioButton" layoutX="260.0" layoutY="261.0" text="Register as a teacher" />
+            <JFXDialog layoutX="487.0" layoutY="518.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
